@@ -28,8 +28,6 @@ export class AppComponent implements AfterViewInit {
       })
   }
 
-  // onChangeDocument() {
-  //   this.document = 'http://www.africau.edu/images/default/sample.pdf'
-  // }
+
 
 }
