@@ -17,6 +17,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { HeaderComponent } from './shared/header/header.component'
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,9 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
     FileViewerComponent,
     UploadListComponent,
     AuthComponent,
+    HeaderComponent,
+    LoadingComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
