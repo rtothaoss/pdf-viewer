@@ -66,19 +66,6 @@
     opacity: 0.8;
   }
 
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .viewer {
-    width: 100%;
-    height: 100vh;
-  }
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -133,6 +120,4 @@
     </a>
 </div>
 
-<div class="content" role="main">
-  <div #viewer class="viewer"></div>
-</div>
+<app-file-viewer></app-file-viewer>

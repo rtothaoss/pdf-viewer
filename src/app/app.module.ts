@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PdfUploadComponent } from './pdf-upload/pdf-upload.component';
-import { PdfViewerComponent } from './pdf-viewer/pdf-viewer.component';
-import { AuthComponent } from './auth/auth.component';
+import { UploadFormComponent } from './components/upload-form/upload-form.component';
+import { UploadDetailsComponent } from './components/upload-details/upload-details.component';
+import { FileViewerComponent } from './components/file-viewer/file-viewer.component';
+import { UploadListComponent } from './components/upload-list/upload-list.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PdfUploadComponent,
-    PdfViewerComponent,
-    AuthComponent
+    UploadFormComponent,
+    UploadDetailsComponent,
+    FileViewerComponent,
+    UploadListComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
