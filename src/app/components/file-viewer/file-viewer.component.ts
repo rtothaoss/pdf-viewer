@@ -43,7 +43,7 @@ export class FileViewerComponent implements OnInit, OnDestroy, AfterViewInit {
       this.button2.addEventListener('click', () => {
         instance.UI.loadDocument(this.document2)
       })
-      instance.UI.loadDocument(this.document)
+      // instance.UI.loadDocument(this.document)
         
       instance.UI.setTheme('dark')
 
