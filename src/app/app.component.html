@@ -1,21 +1,20 @@
 <app-header [appTitle]=title></app-header>
+
 <div class="container">
   <div class="row">
   <div class="col" style="width:600px">
-  <!-- <div>
-    <h4>{{ title }}</h4>
-  </div> -->
+
 
   <div class="mt-4">
     <app-upload-form></app-upload-form>
   </div>
 
   <div class="mt-3">
-    <app-upload-list></app-upload-list>
+    <app-upload-list ></app-upload-list>
   </div>
 </div>
 <div class="col mt-4">
-  <app-file-viewer></app-file-viewer>
+  <app-file-viewer class="{{isVisible ? 'visible' : 'invisible'}}"></app-file-viewer>
 </div>
 </div>
 </div>

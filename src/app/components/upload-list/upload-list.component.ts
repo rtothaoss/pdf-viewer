@@ -10,10 +10,10 @@ import { map } from 'rxjs/operators';
 export class UploadListComponent implements OnInit {
   fileUploads?: any[];
 
+
   constructor(private uploadService: FileUploadService) { }
 
   ngOnInit(): void {
-  
 
     this.uploadService.getFiles(6).snapshotChanges().pipe(
       map(changes =>
@@ -22,6 +22,10 @@ export class UploadListComponent implements OnInit {
       )
     ).subscribe(fileUploads => {
       this.fileUploads = fileUploads;
+      console.log(this.fileUploads)
     });
+    
   }
+
+
 }

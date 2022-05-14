@@ -19,6 +19,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { HeaderComponent } from './shared/header/header.component'
 import { LoadingComponent } from './shared/loading/loading.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { LoadingComponent } from './shared/loading/loading.component';
     HeaderComponent,
     LoadingComponent,
     LoadingComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { LoadingComponent } from './shared/loading/loading.component';
     AngularFireAuthModule,
     AngularFireModule,
     AngularFirestoreModule,
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideDatabase(() => getDatabase())
   ],
