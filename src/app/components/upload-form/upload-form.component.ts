@@ -15,6 +15,9 @@ export class UploadFormComponent implements OnInit {
   constructor(private uploadService: FileUploadService) { }
 
   ngOnInit(): void {
+    console.log('---------')
+    console.log(this.currentFileUpload)
+    console.log('---------')
   }
 
   selectFile(event: any): void {
@@ -30,7 +33,13 @@ export class UploadFormComponent implements OnInit {
         this.currentFileUpload = new FileUpload(file);
         this.uploadService.pushFileToStorage(this.currentFileUpload).subscribe(
           percentage => {
+            
             this.percentage = Math.round(percentage ? percentage : 0);
+            if(this.percentage === 100) {
+              setTimeout(() => {
+                this.currentFileUpload = undefined;
+              }, 2000)
+            }
           },
           error => {
             console.log(error);
